@@ -1,0 +1,129 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-height: 100vh;
+    display: grid;
+    place-content: center;
+    background-color: hsl(204, 43%, 93%);
+
+}
+
+main {
+    display: grid;
+    max-width: 18.75rem;
+    font-size: .85rem;
+    font-family: 'Karla', sans-serif;
+}
+
+.section-1 {
+    padding: 1.5rem;
+    color: hsl(179, 62%, 43%);
+    background-color: white;
+    border-radius: .3rem .3rem 0 0;
+}
+
+.section-1 h2 {
+    font-size: 1.15rem;
+}
+
+.section-1 h4 {
+    color: hsl(71, 73%, 54%);
+    margin: 1rem 0;
+}
+
+.section-1 p {
+    line-height: 1.4rem;
+    font-size: .8rem;
+    color: hsl(218, 22%, 67%);
+    opacity: .8;
+
+}
+
+.section-2 {
+    display: grid;
+    background-color: hsl(179, 62%, 43%);
+    padding: 1.5rem;
+    color: white;
+}
+
+.section-2 p {
+    opacity: .8;
+}
+
+.price {
+    display: flex;
+    margin-top: .5rem;
+    margin-bottom: .25rem;
+}
+
+.price span {
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+
+.price p {
+    display: flex;
+    align-items: center;
+    color: hsl(204, 43%, 93%);
+    opacity: .6;
+    margin-left: .5rem;
+    font-size: .8rem;
+}
+
+.sign-up-btn {
+    justify-content: center;
+    margin-top: 1.2rem;
+    border: none;
+    padding: .5rem;
+    border-radius: .3rem;
+    font-size: .8rem;
+    color: white;
+    font-family: 'Karla', sans-serif;
+    font-weight: 700;
+    background-color: hsl(71, 73%, 54%);
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.15);
+}
+
+.section-3 {
+    color: white;
+    background-color: hsl(179, 62%, 43%);
+    opacity: .8;
+    padding: 1.5rem;
+    border-radius: 0 0 .3rem .3rem;
+
+}
+
+.service-list {
+    margin-top: 1rem;
+    color:  hsl(204, 43%, 93%);
+    opacity: .7;
+    font-size: .75rem;
+    line-height: 1.2rem;
+}
+
+@media all and (min-width: 600px) {
+    main {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto;
+        place-content: center;
+    }
+    
+    .section-1 {
+        grid-column: 1/3;
+        width: 500px;
+        padding: 2rem;
+    }
+
+    .section-2 {
+        padding: 2rem;
+        border-radius: 0 0 0 .3rem;
+    }
+    
+    .section-3 {
+        padding: 2rem;
+        border-radius: 0 0 0.3rem 0;
+    }
+}
